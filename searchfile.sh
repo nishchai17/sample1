@@ -1,2 +1,2 @@
 #!/bin/bash
-ls file*
+find . -type f -name 'file*'
