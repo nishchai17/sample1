@@ -1,7 +1,7 @@
 pipeline {
     agent any
         stages {
-        stage('checkout') {
+        stage('clone') {
             steps {
                 sh 'rm -rf hello-world-war'
                 sh 'git clone https://github.com/nishchai17/hello-world-war.git'
