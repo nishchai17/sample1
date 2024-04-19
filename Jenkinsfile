@@ -12,5 +12,11 @@ pipeline {
                 echo "mvn clean package"
             }
         }
+         stage('deploy') {
+            steps {
+                echo "hello"
+            }
+        }
+
     }
 }
