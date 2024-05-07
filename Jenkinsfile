@@ -3,18 +3,17 @@ pipeline {
         stages {
         stage('clone') {
             steps {
-                sh 'rm -rf hello-world-war'
-                sh 'git clone https://github.com/nishchai17/hello-world-war.git'
+                echo "cloning is done"
             }
         }
         stage('build') {
             steps {
-                echo "mvn clean package"
+                echo "building is done"
             }
         }
          stage('deploy') {
             steps {
-                echo "hello"
+                echo "deployed to artifactory"
             }
         }
 
